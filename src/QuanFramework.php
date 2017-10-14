@@ -10,6 +10,7 @@ class QuanFramework extends LibraryInstaller
 {
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
     {
+        echo "安装框架....";
         parent::install($repo, $package);
         if ($this->composer->getPackage()->getType() == 'project' && $package->getInstallationSource() != 'source') {
             //remove tests dir

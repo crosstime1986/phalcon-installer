@@ -20,6 +20,7 @@ class QuanExtend extends LibraryInstaller
 
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
     {
+        echo "安装扩展....";
         parent::install($repo, $package);
         $this->copyExtraFiles($package);
     }
