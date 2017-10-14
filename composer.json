@@ -5,7 +5,7 @@
         "composer/composer": "1.0.*@dev",
         "composer-plugin-api": ">=1.0"
     },
-    "version": "1.0.5",
+    "version": "1.0.6",
     "license": "Apache-2.0",
     "authors": [
         {

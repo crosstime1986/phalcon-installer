@@ -11,6 +11,7 @@ class Plugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
+        echo "install begin...";
         $manager = $composer->getInstallationManager();
 
         //框架核心
