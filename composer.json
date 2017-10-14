@@ -2,12 +2,10 @@
     "name": "zhengyou/phalcon-installer",
     "type": "composer-plugin",
     "require": {
+        "composer/composer": "1.0.*@dev",
         "composer-plugin-api": ">=1.0"
     },
-    "require-dev": {
-        "composer/composer": "1.0.*@dev"
-    },
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "Apache-2.0",
     "authors": [
         {

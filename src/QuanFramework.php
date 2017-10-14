@@ -22,7 +22,7 @@ class QuanFramework extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        if ('topthink/framework' !== $package->getPrettyName()) {
+        if ('zhengyou/phalcon-framework' !== $package->getPrettyName()) {
             throw new \InvalidArgumentException('Unable to install this library!');
         }
 
@@ -32,12 +32,12 @@ class QuanFramework extends LibraryInstaller
 
         if ($this->composer->getPackage()) {
             $extra = $this->composer->getPackage()->getExtra();
-            if (!empty($extra['think-path'])) {
-                return $extra['think-path'];
+            if (!empty($extra['quan-path'])) {
+                return $extra['quan-path'];
             }
         }
 
-        return 'thinkphp';
+        return 'system';
     }
 
     public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target)
@@ -54,6 +54,6 @@ class QuanFramework extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'think-framework' === $packageType;
+        return 'zhengyou/phalcon-framework' === $packageType;
     }
 }
