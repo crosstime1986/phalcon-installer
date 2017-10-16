@@ -55,6 +55,6 @@ class QuanFramework extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'zhengyou/phalcon-framework' === $packageType;
+        return 'phalcon-framework' === $packageType;
     }
 }
